@@ -73,7 +73,7 @@ export function ResearchSection() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="mb-14 mt-6 text-4xl tracking-tight text-white md:text-6xl"
         >
-          研究<span className="font-serif italic text-white/50">成果</span>
+          科研<span className="font-serif italic text-white/50">成果</span>
         </motion.h2>
 
         {/* Papers */}
