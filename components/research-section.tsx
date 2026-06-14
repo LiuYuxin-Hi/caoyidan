@@ -3,6 +3,10 @@
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { FileText, FlaskConical } from "lucide-react"
+import { SectionVideoBg } from "@/components/section-video-bg"
+
+const RESEARCH_BG_VIDEO =
+  "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260307_083826_e938b29f-a43a-41ec-a153-3d4730578ab8.mp4"
 
 const PAPERS = [
   {
@@ -48,8 +52,9 @@ export function ResearchSection() {
     <section
       id="research"
       ref={ref}
-      className="relative scroll-mt-24 overflow-hidden bg-black px-6 py-24 md:py-32"
+      className="soft-section relative scroll-mt-24 overflow-hidden bg-black px-6 py-24 md:py-32"
     >
+      <SectionVideoBg src={RESEARCH_BG_VIDEO} opacity={0.16} />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.02)_0%,_transparent_60%)]" />
 
       <div className="relative mx-auto max-w-6xl">

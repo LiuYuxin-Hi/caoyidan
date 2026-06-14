@@ -10,7 +10,7 @@ export function SectionVideoBg({
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden">
       <video
-        className="h-full w-full object-cover object-center"
+        className="h-full w-full scale-105 object-cover object-center"
         style={{ opacity }}
         src={src}
         muted
@@ -18,10 +18,10 @@ export function SectionVideoBg({
         loop
         playsInline
         preload="auto"
+        crossOrigin="anonymous"
       />
-      {/* Dark wash + vignette to keep text legible */}
-      <div className="absolute inset-0 bg-black/70" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_25%,_rgba(0,0,0,0.85)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(110deg,_rgba(0,0,0,0.88)_0%,_rgba(0,0,0,0.62)_42%,_rgba(0,0,0,0.78)_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_18%,_rgba(0,0,0,0.88)_100%)]" />
     </div>
   )
 }

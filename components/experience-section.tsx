@@ -83,11 +83,21 @@ export function ExperienceSection() {
           ))}
         </div>
 
+        {/* Self evaluation title */}
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.5 }}
+          className="mt-16 mb-8 text-4xl tracking-tight text-white md:text-6xl"
+        >
+          自我<span className="font-serif italic text-white/50">评价</span>
+        </motion.h2>
+
         {/* Student organizations */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7, delay: 0.5 }}
+          transition={{ duration: 0.7, delay: 0.6 }}
           className="mt-8"
         >
           <p className="mb-5 text-xs uppercase tracking-widest text-white/40">学生组织任职</p>

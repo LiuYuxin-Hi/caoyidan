@@ -3,6 +3,10 @@
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { Mail, Phone } from "lucide-react"
+import { SectionVideoBg } from "@/components/section-video-bg"
+
+const FOOTER_BG_VIDEO =
+  "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260324_151826_c7218672-6e92-402c-9e45-f1e0f454bdc4.mp4"
 
 const TRAITS = [
   {
@@ -22,8 +26,9 @@ export function FooterSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <footer ref={ref} className="overflow-hidden bg-black px-6 pb-16 pt-24 md:pb-20 md:pt-32">
-      <div className="mx-auto max-w-6xl">
+    <footer ref={ref} className="relative overflow-hidden bg-black px-6 pb-16 pt-24 md:pb-20 md:pt-32">
+      <SectionVideoBg src={FOOTER_BG_VIDEO} opacity={0.14} />
+      <div className="relative mx-auto max-w-6xl">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -33,7 +38,16 @@ export function FooterSection() {
           
         </motion.p>
 
-        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="mt-6 mb-10 text-4xl tracking-tight text-white md:text-6xl"
+        >
+          自我<span className="font-serif italic text-white/50">评价</span>
+        </motion.h2>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {TRAITS.map((t, i) => (
             <motion.div
               key={t.title}

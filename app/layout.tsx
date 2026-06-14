@@ -35,7 +35,6 @@ export const metadata: Metadata = {
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
   },
 }
 
@@ -57,6 +56,16 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} bg-black`}
     >
+      <head>
+        <link rel="preconnect" href="https://d8j0ntlcm91z4.cloudfront.net" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://d8j0ntlcm91z4.cloudfront.net" />
+        <link
+          rel="preload"
+          as="video"
+          href="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_074625_a81f018a-956b-43fb-9aee-4d1508e30e6a.mp4"
+          type="video/mp4"
+        />
+      </head>
       <body className="font-sans antialiased bg-black">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

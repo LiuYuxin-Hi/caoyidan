@@ -3,6 +3,10 @@
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { Trophy } from "lucide-react"
+import { SectionVideoBg } from "@/components/section-video-bg"
+
+const HONORS_BG_VIDEO =
+  "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260314_131748_f2ca2a28-fed7-44c8-b9a9-bd9acdd5ec31.mp4"
 
 const TIERS = [
   {
@@ -60,9 +64,10 @@ export function HonorsSection() {
     <section
       id="honors"
       ref={ref}
-      className="scroll-mt-24 overflow-hidden bg-black px-6 py-24 md:py-32"
+      className="soft-section relative scroll-mt-24 overflow-hidden bg-black px-6 py-24 md:py-32"
     >
-      <div className="mx-auto max-w-6xl">
+      <SectionVideoBg src={HONORS_BG_VIDEO} opacity={0.15} />
+      <div className="relative mx-auto max-w-6xl">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}

@@ -165,21 +165,39 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-black text-foreground;
+    min-width: 320px;
+    overflow-x: hidden;
+    background:
+      radial-gradient(circle at 18% 12%, rgba(216, 166, 69, 0.12), transparent 26rem),
+      radial-gradient(circle at 88% 10%, rgba(88, 140, 160, 0.12), transparent 22rem),
+      #000;
+    text-rendering: geometricPrecision;
   }
   html {
     @apply font-sans;
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background: rgba(221, 174, 76, 0.35);
+    color: white;
   }
 }
 
 @layer components {
   .liquid-glass {
-    background: rgba(255, 255, 255, 0.01);
+    background:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.105), rgba(255, 255, 255, 0.025)),
+      rgba(255, 255, 255, 0.02);
     background-blend-mode: luminosity;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(16px) saturate(122%);
+    -webkit-backdrop-filter: blur(16px) saturate(122%);
     border: none;
-    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    box-shadow:
+      inset 0 1px 1px rgba(255, 255, 255, 0.16),
+      inset 0 -1px 1px rgba(255, 255, 255, 0.04),
+      0 24px 80px rgba(0, 0, 0, 0.34);
     position: relative;
     overflow: hidden;
   }
@@ -203,5 +221,24 @@
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     pointer-events: none;
+  }
+
+  .soft-section {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .soft-section::after {
+    content: '';
+    position: absolute;
+    inset: auto 6% 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+    pointer-events: none;
+  }
+
+  .gold-text {
+    color: oklch(0.86 0.13 82);
+    text-shadow: 0 0 24px rgba(216, 166, 69, 0.28);
   }
 }
