@@ -61,16 +61,18 @@ export function EducationSection() {
               <h3 className="mt-2 text-2xl tracking-tight text-white md:text-3xl">{item.school}</h3>
               <p className="mt-1 text-base text-white/70">{item.degree}</p>
               <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/50">{item.detail}</p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {item.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/60"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
+              {item.tags?.length ? (
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {item.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/60"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              ) : null}
             </motion.div>
           ))}
         </div>
