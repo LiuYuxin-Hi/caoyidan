@@ -194,8 +194,8 @@ export default function Page() {
       <EducationSection />
       <ResearchSection />
       <HonorsSection />
-      <StudentWorkSection />
       <ExperienceSection />
+      <StudentWorkSection />
       <FooterSection />
 
       {isContactOpen && (

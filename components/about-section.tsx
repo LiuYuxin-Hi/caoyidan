@@ -94,14 +94,14 @@ export function AboutSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="liquid-glass flex flex-col justify-center rounded-3xl p-8 lg:col-span-2"
+            className="liquid-glass flex flex-col rounded-3xl p-8 lg:col-span-2"
           >
-            <p className="mb-8 text-sm uppercase tracking-[0.35em] text-white/40">履历概览</p>
-            <div className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-5">
+            <p className="mb-10 text-left text-2xl font-bold tracking-[0.18em] text-white md:text-3xl">履历概览</p>
+            <div className="grid flex-1 grid-cols-2 items-center gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-5">
               {METRICS.map((m) => (
-                <div key={m.label} className="flex flex-col items-start">
-                  <span className="font-serif text-6xl leading-none text-gold md:text-7xl">{m.value}</span>
-                  <span className="mt-3 text-sm text-white/60">{m.label}</span>
+                <div key={m.label} className="flex flex-col items-center text-center">
+                  <span className="font-serif text-6xl leading-none text-white md:text-7xl">{m.value}</span>
+                  <span className="mt-3 text-sm font-semibold text-white">{m.label}</span>
                 </div>
               ))}
             </div>
