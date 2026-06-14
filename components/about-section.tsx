@@ -12,7 +12,7 @@ const FACTS = [
   { label: "籍贯", value: "甘肃天水" },
   { label: "出生年月", value: "2003.06" },
   { label: "政治面貌", value: "共青团员" },
-  { label: "雅思", value: "6.5" },
+  { label: "外语能力", value: "CET4：540 CET6：497 雅思：6.5 德语水平：A1" },
 ]
 
 const METRICS = [
@@ -96,12 +96,12 @@ export function AboutSection() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="liquid-glass flex flex-col justify-center rounded-3xl p-8 lg:col-span-2"
           >
-            <p className="mb-8 text-xs uppercase tracking-widest text-white/40">履历概览</p>
-            <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-5">
+            <p className="mb-8 text-sm uppercase tracking-[0.35em] text-white/40">履历概览</p>
+            <div className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-5">
               {METRICS.map((m) => (
-                <div key={m.label} className="flex flex-col">
-                  <span className="font-serif text-5xl leading-none text-gold md:text-6xl">{m.value}</span>
-                  <span className="mt-3 text-xs text-white/55">{m.label}</span>
+                <div key={m.label} className="flex flex-col items-start">
+                  <span className="font-serif text-6xl leading-none text-gold md:text-7xl">{m.value}</span>
+                  <span className="mt-3 text-sm text-white/60">{m.label}</span>
                 </div>
               ))}
             </div>

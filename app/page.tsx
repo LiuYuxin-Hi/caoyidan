@@ -8,17 +8,19 @@ import { EducationSection } from "@/components/education-section"
 import { ResearchSection } from "@/components/research-section"
 import { HonorsSection } from "@/components/honors-section"
 import { ExperienceSection } from "@/components/experience-section"
+import { StudentWorkSection } from "@/components/student-work-section"
 import { FooterSection } from "@/components/footer-section"
 
 const HERO_VIDEO =
   "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_074625_a81f018a-956b-43fb-9aee-4d1508e30e6a.mp4"
 
 const NAV_LINKS = [
-  { label: "鍏充簬", href: "#about" },
-  { label: "鏁欒偛", href: "#education" },
-  { label: "绉戠爺", href: "#research" },
-  { label: "鑽ｈ獕", href: "#honors" },
-  { label: "瀹炰範", href: "#experience" },
+  { label: "关于我", href: "#about" },
+  { label: "教育背景", href: "#education" },
+  { label: "科研成果", href: "#research" },
+  { label: "竞赛奖项", href: "#honors" },
+  { label: "实习经历", href: "#experience" },
+  { label: "学生工作", href: "#student-work" },
 ]
 
 export default function Page() {
@@ -32,14 +34,8 @@ export default function Page() {
     const name = String(formData.get("name") || "")
     const email = String(formData.get("email") || "")
     const message = String(formData.get("message") || "")
-    const subject = encodeURIComponent(`缃戠珯鑱旂郴 - ${name || "璁垮"}`)
-    const body = encodeURIComponent(`绉板懠锛?{name}\n閭锛?{email}\n\n鎰忚锛歕n${message}`)
-    window.location.href = `mailto:18794666688@163.com?subject=${subject}&body=${body}`
-  }
-
-  useEffect(() => {
-    const video = videoRef.current
-    if (!video) return
+      const subject = encodeURIComponent(`网站咨询 - ${name || "访客"}`)
+      const body = encodeURIComponent(`姓名：${name}\n邮箱：${email}\n\n意见：\n${message}`)
 
     const cancelFade = () => {
       if (fadeRafRef.current !== null) {
@@ -99,7 +95,7 @@ export default function Page() {
 
   return (
     <main className="bg-black text-white">
-      {/* SECTION 1 鈥?HERO */}
+      {/* SECTION 1 — HERO */}
       <section className="relative flex min-h-screen flex-col overflow-hidden">
         <video
           ref={videoRef}
@@ -112,14 +108,12 @@ export default function Page() {
           preload="auto"
           crossOrigin="anonymous"
         />
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(115deg,_rgba(0,0,0,0.86)_0%,_rgba(0,0,0,0.46)_48%,_rgba(0,0,0,0.82)_100%)]" />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,_transparent_0%,_rgba(0,0,0,0.72)_76%)]" />
 
         {/* Navbar */}
         <nav className="relative z-20 px-5 py-5 md:px-6 md:py-6">
           <div className="liquid-glass mx-auto flex max-w-6xl items-center justify-between rounded-full px-5 py-3 md:px-7">
             <div className="flex items-center">
-              <span className="text-lg font-semibold tracking-tight text-white">鏇硅瘧涓?</span>
+              <span className="text-lg font-semibold tracking-tight text-white">曹译丹</span>
               <span className="ml-2 hidden text-xs text-gold sm:inline">Caoyidan</span>
               <div className="ml-8 hidden items-center gap-7 md:flex">
                 {NAV_LINKS.map((link) => (
@@ -138,7 +132,7 @@ export default function Page() {
               onClick={() => setIsContactOpen(true)}
               className="liquid-glass rounded-full px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-white/10 hover:text-gold"
             >
-              鑱旂郴鎴?
+              联系我
             </button>
           </div>
         </nav>
@@ -148,11 +142,12 @@ export default function Page() {
           <p className="mb-5 text-sm uppercase tracking-[0.3em] text-gold"></p>
 
           <h1 className="font-serif text-5xl leading-tight tracking-tight text-white md:text-7xl lg:text-8xl">
-            浣犲ソ锛屾垜鏄浌璇戜腹
+            你好，我是曹译丹
           </h1>
 
           <p className="mt-8 max-w-2xl px-4 font-serif text-xl italic leading-relaxed text-white/70 md:text-2xl">
-            娉曞緥涓嶈兘浣夸汉浜哄钩绛夛紝浣嗗湪娉曞緥闈㈠墠浜轰汉鏄钩绛夌殑銆?          </p>
+            法律不能使人人平等，但在法律面前人人是平等的。
+          </p>
 
           {/* Contact pills */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
@@ -172,7 +167,7 @@ export default function Page() {
             </a>
             <span className="liquid-glass flex items-center gap-2 rounded-full px-5 py-2.5 text-sm text-white">
               <GraduationCap className="h-4 w-4 text-white" aria-hidden="true" />
-              灞变笢澶у
+              山东大学
             </span>
           </div>
         </div>
@@ -181,7 +176,7 @@ export default function Page() {
         <div className="relative z-10 flex justify-center pb-10">
           <a
             href="#about"
-            aria-label="鍚戜笅婊氬姩"
+            aria-label="向下滚动"
             className="liquid-glass rounded-full p-4 text-white/70 transition-all hover:-translate-y-1 hover:bg-white/10 hover:text-gold"
           >
             <ArrowDown className="h-5 w-5" aria-hidden="true" />
@@ -193,6 +188,7 @@ export default function Page() {
       <EducationSection />
       <ResearchSection />
       <HonorsSection />
+      <StudentWorkSection />
       <ExperienceSection />
       <FooterSection />
 
