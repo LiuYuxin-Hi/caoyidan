@@ -12,7 +12,7 @@ import { StudentWorkSection } from "@/components/student-work-section"
 import { FooterSection } from "@/components/footer-section"
 
 const HERO_VIDEO =
-  "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_074625_a81f018a-956b-43fb-9aee-4d1508e30e6a.mp4"
+  "/videos/hero.mp4"
 
 const NAV_LINKS = [
   { label: "关于我", href: "#about" },

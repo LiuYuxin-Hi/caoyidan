@@ -6,7 +6,7 @@ import { Mail, Phone } from "lucide-react"
 import { SectionVideoBg } from "@/components/section-video-bg"
 
 const FOOTER_BG_VIDEO =
-  "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260324_151826_c7218672-6e92-402c-9e45-f1e0f454bdc4.mp4"
+  "/videos/footer.mp4"
 
 const TRAITS = [
   {

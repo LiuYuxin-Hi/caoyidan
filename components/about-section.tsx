@@ -6,7 +6,7 @@ import Image from "next/image"
 import { SectionVideoBg } from "@/components/section-video-bg"
 
 const ABOUT_BG_VIDEO =
-  "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260402_054547_9875cfc5-155a-4229-8ec8-b7ba7125cbf8.mp4"
+  "/videos/about.mp4"
 
 const FACTS = [
   { label: "籍贯", value: "甘肃天水" },

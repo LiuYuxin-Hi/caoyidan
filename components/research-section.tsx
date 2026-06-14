@@ -6,7 +6,7 @@ import { FileText, FlaskConical } from "lucide-react"
 import { SectionVideoBg } from "@/components/section-video-bg"
 
 const RESEARCH_BG_VIDEO =
-  "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260307_083826_e938b29f-a43a-41ec-a153-3d4730578ab8.mp4"
+  "/videos/research.mp4"
 
 const PAPERS = [
   {
