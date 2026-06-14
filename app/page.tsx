@@ -34,8 +34,14 @@ export default function Page() {
     const name = String(formData.get("name") || "")
     const email = String(formData.get("email") || "")
     const message = String(formData.get("message") || "")
-      const subject = encodeURIComponent(`网站咨询 - ${name || "访客"}`)
-      const body = encodeURIComponent(`姓名：${name}\n邮箱：${email}\n\n意见：\n${message}`)
+    const subject = encodeURIComponent(`网站咨询 - ${name || "访客"}`)
+    const body = encodeURIComponent(`姓名：${name}\n邮箱：${email}\n\n意见：\n${message}`)
+    window.location.href = `mailto:18794666688@163.com?subject=${subject}&body=${body}`
+  }
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
 
     const cancelFade = () => {
       if (fadeRafRef.current !== null) {
