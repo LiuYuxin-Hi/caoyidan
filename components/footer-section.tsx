@@ -30,7 +30,7 @@ export function FooterSection() {
           transition={{ duration: 0.6 }}
           className="text-sm uppercase tracking-[0.3em] text-gold"
         >
-          自我评价
+          
         </motion.p>
 
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -63,14 +63,14 @@ export function FooterSection() {
               href="tel:18794666688"
               className="liquid-glass flex items-center gap-2 rounded-full px-6 py-3 text-sm text-white transition-colors hover:bg-white/5"
             >
-              <Phone className="h-4 w-4 text-gold" aria-hidden="true" />
+              <Phone className="h-4 w-4 text-white" aria-hidden="true" />
               187 9466 6688
             </a>
             <a
               href="mailto:18794666688@163.com"
               className="liquid-glass flex items-center gap-2 rounded-full px-6 py-3 text-sm text-white transition-colors hover:bg-white/5"
             >
-              <Mail className="h-4 w-4 text-gold" aria-hidden="true" />
+              <Mail className="h-4 w-4 text-white" aria-hidden="true" />
               18794666688@163.com
             </a>
           </div>

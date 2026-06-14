@@ -37,7 +37,7 @@ export function EducationSection() {
           transition={{ duration: 0.6 }}
           className="text-sm uppercase tracking-[0.3em] text-gold"
         >
-          教育背景
+          
         </motion.p>
 
         <motion.h2

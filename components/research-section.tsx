@@ -59,7 +59,7 @@ export function ResearchSection() {
           transition={{ duration: 0.6 }}
           className="text-sm uppercase tracking-[0.3em] text-gold"
         >
-          科研与论文
+          
         </motion.p>
 
         <motion.h2
@@ -73,7 +73,7 @@ export function ResearchSection() {
 
         {/* Papers */}
         <div className="mb-6 flex items-center gap-3">
-          <FileText className="h-4 w-4 text-gold" aria-hidden="true" />
+          <FileText className="h-4 w-4 text-white" aria-hidden="true" />
           <span className="text-xs uppercase tracking-widest text-white/40">学术论文</span>
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -95,7 +95,7 @@ export function ResearchSection() {
 
         {/* Projects */}
         <div className="mb-6 mt-14 flex items-center gap-3">
-          <FlaskConical className="h-4 w-4 text-gold" aria-hidden="true" />
+          <FlaskConical className="h-4 w-4 text-white" aria-hidden="true" />
           <span className="text-xs uppercase tracking-widest text-white/40">科研项目</span>
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">

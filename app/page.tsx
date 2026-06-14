@@ -129,7 +129,7 @@ export default function Page() {
 
         {/* Hero content */}
         <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-6 py-12 text-center">
-          <p className="mb-5 text-sm uppercase tracking-[0.3em] text-gold">民商法 · 法学硕士</p>
+          <p className="mb-5 text-sm uppercase tracking-[0.3em] text-gold"></p>
 
           <h1 className="font-serif text-5xl leading-tight tracking-tight text-white md:text-7xl lg:text-8xl">
             你好，我是曹译丹
@@ -145,18 +145,18 @@ export default function Page() {
               href="tel:18794666688"
               className="liquid-glass flex items-center gap-2 rounded-full px-5 py-2.5 text-sm text-white transition-colors hover:bg-white/5"
             >
-              <Phone className="h-4 w-4 text-gold" aria-hidden="true" />
+              <Phone className="h-4 w-4 text-white" aria-hidden="true" />
               187 9466 6688
             </a>
             <a
               href="mailto:18794666688@163.com"
               className="liquid-glass flex items-center gap-2 rounded-full px-5 py-2.5 text-sm text-white transition-colors hover:bg-white/5"
             >
-              <Mail className="h-4 w-4 text-gold" aria-hidden="true" />
+              <Mail className="h-4 w-4 text-white" aria-hidden="true" />
               18794666688@163.com
             </a>
             <span className="liquid-glass flex items-center gap-2 rounded-full px-5 py-2.5 text-sm text-white">
-              <GraduationCap className="h-4 w-4 text-gold" aria-hidden="true" />
+              <GraduationCap className="h-4 w-4 text-white" aria-hidden="true" />
               山东大学
             </span>
           </div>

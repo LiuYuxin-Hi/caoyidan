@@ -42,7 +42,7 @@ export function AboutSection() {
           transition={{ duration: 0.6 }}
           className="text-sm uppercase tracking-[0.3em] text-gold"
         >
-          Profile
+          
         </motion.p>
 
         <motion.h2

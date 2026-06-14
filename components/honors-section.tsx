@@ -69,7 +69,7 @@ export function HonorsSection() {
           transition={{ duration: 0.6 }}
           className="text-sm uppercase tracking-[0.3em] text-gold"
         >
-          竞赛与荣誉
+          
         </motion.p>
 
         <motion.h2
@@ -78,14 +78,14 @@ export function HonorsSection() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="mb-14 mt-6 text-4xl tracking-tight text-white md:text-6xl"
         >
-          所获<span className="font-serif italic text-white/50">奖项</span>
+          竞赛<span className="font-serif italic text-white/50">奖项</span>
         </motion.h2>
 
         <div className="space-y-10">
           {TIERS.map((group, gi) => (
             <div key={group.tier}>
               <div className="mb-5 flex items-center gap-3">
-                <Trophy className="h-4 w-4 text-gold" aria-hidden="true" />
+                <Trophy className="h-4 w-4 text-white" aria-hidden="true" />
                 <span className="text-xs uppercase tracking-widest text-white/40">{group.tier}竞赛</span>
               </div>
               <div className="grid grid-cols-1 gap-4 md:grid-cols-3">

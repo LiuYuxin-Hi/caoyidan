@@ -52,7 +52,7 @@ export function ExperienceSection() {
           transition={{ duration: 0.6 }}
           className="text-sm uppercase tracking-[0.3em] text-gold"
         >
-          实习经历
+          
         </motion.p>
 
         <motion.h2
@@ -61,7 +61,7 @@ export function ExperienceSection() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="mb-16 mt-6 text-4xl tracking-tight text-white md:text-6xl"
         >
-          实习与<span className="font-serif italic text-white/50">任职</span>
+          实习<span className="font-serif italic text-white/50">经历</span>
         </motion.h2>
 
         {/* Internship timeline */}
