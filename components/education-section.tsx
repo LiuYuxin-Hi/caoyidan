@@ -47,7 +47,7 @@ export function EducationSection() {
 教育<span className="font-serif italic text-white/50">背景</span>
         </motion.h2>
 
-        <div className="relative border-l border-white/10 pl-8 md:pl-12">
+        <div className="relative border-l-[3px] border-white/35 pl-12 md:pl-14">
           {SCHOOLS.map((item, i) => (
             <motion.div
               key={item.school}
@@ -56,7 +56,7 @@ export function EducationSection() {
               transition={{ duration: 0.7, delay: 0.2 + i * 0.15 }}
               className="relative mb-12 last:mb-0"
             >
-              <span className="absolute -left-[2.6rem] top-1.5 h-3 w-3 rounded-full bg-gold ring-4 ring-gold/15 md:-left-[3.65rem]" />
+              <span className="absolute left-[-31px] top-1.5 h-3.5 w-3.5 rounded-full bg-gold ring-4 ring-gold/20" />
               <p className="text-sm text-gold">{item.period}</p>
               <h3 className="mt-2 text-2xl tracking-tight text-white md:text-3xl">{item.school}</h3>
               <p className="mt-1 text-base text-white/70">{item.degree}</p>

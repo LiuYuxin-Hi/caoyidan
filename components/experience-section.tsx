@@ -64,7 +64,7 @@ export function ExperienceSection() {
         </motion.h2>
 
         {/* Internship timeline */}
-        <div className="relative border-l-2 border-white/20 pl-10 md:pl-14">
+        <div className="relative border-l-[3px] border-white/35 pl-12 md:pl-14">
           {EXPERIENCES.map((item, i) => (
             <motion.div
               key={item.org}
@@ -73,7 +73,7 @@ export function ExperienceSection() {
               transition={{ duration: 0.7, delay: 0.2 + i * 0.12 }}
               className="relative mb-12"
             >
-              <span className="absolute -left-1.5 top-1.5 h-3 w-3 rounded-full bg-gold ring-4 ring-gold/15" />
+              <span className="absolute left-[-31px] top-1.5 h-3.5 w-3.5 rounded-full bg-gold ring-4 ring-gold/20" />
               <p className="text-sm text-gold">{item.period}</p>
               <h3 className="mt-2 text-xl tracking-tight text-white md:text-2xl">{item.org}</h3>
               <p className="mt-1 text-sm text-white/70">{item.role}</p>
