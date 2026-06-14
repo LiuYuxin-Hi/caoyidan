@@ -16,9 +16,9 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: 'Hi! I am caoyidan.',
+  title: 'Hi! I am Yidan Cao.',
   description:
-    'Stay updated with the latest news and insights. Subscribe to our newsletter today and never miss out on exciting updates.',
+    'Stay updated with the latest news aCaond insights. Subscribe to our newsletter today and never miss out on exciting updates.',
   generator: 'v0.app',
   icons: {
     icon: [
