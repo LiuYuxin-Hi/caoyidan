@@ -16,25 +16,18 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: 'Asme — Know it then all',
+  title: 'Hi! I am caoyidan.',
   description:
     'Stay updated with the latest news and insights. Subscribe to our newsletter today and never miss out on exciting updates.',
   generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/images/icon.jpg',
+        type: 'image/jpeg',
       },
     ],
+    shortcut: '/images/icon.jpg',
   },
 }
 

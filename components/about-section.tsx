@@ -100,7 +100,7 @@ export function AboutSection() {
             <div className="grid flex-1 grid-cols-2 items-center gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-5">
               {METRICS.map((m) => (
                 <div key={m.label} className="flex flex-col items-center text-center">
-                  <span className="font-serif text-6xl leading-none text-white md:text-7xl">{m.value}</span>
+                  <span className="font-serif text-6xl leading-none text-gold md:text-7xl">{m.value}</span>
                   <span className="mt-3 text-sm font-semibold text-white">{m.label}</span>
                 </div>
               ))}

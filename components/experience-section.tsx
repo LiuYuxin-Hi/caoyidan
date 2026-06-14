@@ -2,6 +2,10 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
+import { SectionVideoBg } from "@/components/section-video-bg"
+
+const HONORS_BG_VIDEO =
+  "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260314_131748_f2ca2a28-fed7-44c8-b9a9-bd9acdd5ec31.mp4"
 
 const EXPERIENCES = [
   {
@@ -37,6 +41,7 @@ export function ExperienceSection() {
       ref={ref}
       className="relative scroll-mt-24 overflow-hidden bg-black px-6 py-24 md:py-32"
     >
+      <SectionVideoBg src={HONORS_BG_VIDEO} opacity={0.15} />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(255,255,255,0.03)_0%,_transparent_70%)]" />
 
       <div className="relative mx-auto max-w-6xl">
