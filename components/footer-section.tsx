@@ -70,7 +70,7 @@ export function FooterSection() {
           className="mt-16 flex flex-col items-center text-center"
         >
           <h2 className="font-serif text-4xl tracking-tight text-white md:text-6xl">
-            期待与您<span className="italic text-gold">同行</span>
+            一起探索这个世界吧！
           </h2>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <a
@@ -91,7 +91,7 @@ export function FooterSection() {
         </motion.div>
 
         <div className="mt-20 flex flex-col items-center justify-center gap-4 border-t border-white/10 pt-8 text-xs text-white/30 md:flex-row">
-          <span>曹译丹 · 为人权而奋斗</span>
+          <span></span>
         </div>
       </div>
     </footer>

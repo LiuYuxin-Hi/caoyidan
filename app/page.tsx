@@ -152,7 +152,7 @@ export default function Page() {
           </h1>
 
           <p className="mt-8 max-w-2xl px-4 font-serif text-xl italic leading-relaxed text-white/70 md:text-2xl">
-            法律不能使人人平等，但在法律面前人人是平等的。
+            我不会虚掷我的黄金时代
           </p>
 
           {/* Contact pills */}
